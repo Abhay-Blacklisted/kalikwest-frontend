@@ -1,8 +1,10 @@
+import { stripHtml } from "@/utils/stripHtml";
+
 export const mapAboutOperate = (apiData) => {
     if (!apiData) return null;
     return {
            heading: apiData.title,
-           description: apiData.description,
+           description: stripHtml(apiData.description),
            operateCards: (apiData.page_meta?.Sections).map((item, index) => ({
               icon: item.image,
               title: item.title_list,
