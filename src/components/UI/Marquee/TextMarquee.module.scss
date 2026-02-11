@@ -1,0 +1,24 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.textMarqueeContainer {
+    background-color: #FFE395;
+    padding-block:15px 10px;
+    height: 57px;
+    .text {
+ color: $custom-primary-bg;
+font-family: $primary-font;
+font-size: 32px;
+font-weight: 400;
+line-height: 94%;
+    }
+    .icon {
+        margin-inline: 40px;
+    }
+
+    @media (max-width: $tablet) {
+        .text {
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.testimonialCardParent {
+    border-radius: 14px;
+border: 1px dashed #BEBEBE;
+background: $white-color;
+padding: 60px;
+    .testimonialCard {
+        h4 {
+            font-family: $tertiary-font;
+        }
+    }
+    .testimonialCardBottom {
+        margin-top:50px;
+        .authorImage {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    @media(max-width: $tablet) {
+        padding: 30px;
+    }
+}

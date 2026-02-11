@@ -1,0 +1,38 @@
+@use "@/styles/variables.scss" as *;
+
+    .primary {
+    border-radius: 14px;
+    border: 1px solid $custom-primary-bg;
+    background: $custom-primary-bg;
+    padding: 16px 32px;
+    color: $white-color;
+    font-family: $tertiary-font;
+    font-size: 18px;
+   font-weight: 500;
+   line-height: 111%;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+    background: transparent;
+    border: 1px solid $custom-primary-bg;
+    color: $custom-primary-bg;
+   }
+
+    }
+
+    .outline {
+    border-radius: 14px;
+    border: 1px solid $custom-primary-bg;
+    background: transparent;
+    padding: 16px 32px;
+    color: $custom-primary-bg;
+    font-family: $tertiary-font;
+    font-size: 18px;
+   font-weight: 500;
+   line-height: 111%;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+    background: $custom-primary-bg;
+    border: 1px solid $custom-primary-bg;
+    color: $white-color;
+   }
+    }

@@ -1,0 +1,17 @@
+@use "@/styles/breakpoints.scss" as *;
+
+.marketingCard {
+    .image {
+        padding-top:35px;
+        width: 120px;
+        height: 120px;
+    }
+    .marketingCardHeading {
+        font-size: 30px;
+        max-width: 350px;
+    }
+    .marketingCardDesc {
+        max-width: 365px;
+    }
+}
+

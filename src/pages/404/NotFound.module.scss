@@ -1,0 +1,20 @@
+@use "@/styles/breakpoints.scss" as *;
+
+.notFoundSection {
+    margin-block: 180px;
+    .heading {
+        font-size: clamp(40px, 4vw, 72px);
+    }
+    .leftVectorImage {
+        left: 155px;
+    }
+    .rightVectorImage {
+        right: 60px;
+    }
+}
+
+@media (max-width: $mobile) {
+    .notFoundSection {
+        margin-block: 70px;
+    }
+}

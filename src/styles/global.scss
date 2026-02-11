@@ -1,0 +1,122 @@
+@use './variables' as *;
+@use './fonts.scss' as *;
+@use "./breakpoints.scss" as *;
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heroHeadingCustom {
+color: $dark-color;
+font-family: 'Nohemi';
+font-size: clamp(50px, 3vw, 72px);
+font-weight: 500;
+line-height: 140%;
+text-transform: capitalize;
+}
+
+.primary-heading {
+color: $dark-color;
+font-family: 'Nohemi';
+font-size: clamp(30px, 3vw, 50px);
+font-weight: 400;
+line-height: 140%;
+text-transform: capitalize;
+}
+
+.sub-heading {
+color: $dark-color;
+font-family: 'Nohemi';
+font-size: 24px;
+font-weight: 400;
+line-height: 133.33%;
+text-transform: capitalize;
+}
+.primary-description {
+color: $dark-color;
+font-family: 'Helvetica';
+font-size: 18px;
+font-weight: 400;
+line-height: 133.33%;
+}
+
+// Skeletons Unmount Fade In
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+body {
+    background: #FCFBFF;
+    padding-top:84px;
+}
+
+
+.m-60 {
+    margin-block:60px;
+}
+
+.p-60 {
+    padding-block:60px;
+}
+
+.buttonContainer  {
+    margin-top:60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+
+/*Section Spacings*/
+
+.section-spacing {
+    margin-block:$section-spacing-desktop;
+}
+
+
+/*Medias*/
+
+@media screen and (max-width: $laptop) {
+.section-spacing {
+    margin-block:$section-spacing-laptop;
+}
+}
+
+@media screen and (max-width: $mobile) {
+.section-spacing {
+    margin-block:$section-spacing-mobile;
+}
+
+/* Mobile slider */
+  .mobileSlider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+
+    /* hide scrollbar */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .sliderCol {
+    flex: 0 0 calc(100% - 48px); // 👈 second card peek
+    scroll-snap-align: start;
+    padding-right: 16px;
+  }
+}

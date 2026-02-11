@@ -1,0 +1,52 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+@mixin formInputDesign  {
+        border-radius: 14px;
+        border: 1px solid #BEBEBE;
+        background-color: transparent;
+        padding: 20px;
+        color: #868686;
+        font-family: $tertiary-font;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 133.33%; 
+        
+  @media (max-width: $mobile) {
+    padding: 15px;
+  }
+}
+
+.contactForm {
+    .errorText {
+      color: red;
+      font-size: 14px;
+    }
+    .textSuccess {
+      font-size: 14px;
+      color: green;
+    }
+.customFormInputs {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        &:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  input,
+  textarea {
+    @include formInputDesign;
+    width: 100%;
+  }
+}
+}
+
+
+

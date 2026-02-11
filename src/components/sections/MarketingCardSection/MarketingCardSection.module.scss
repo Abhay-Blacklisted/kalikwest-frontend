@@ -1,0 +1,31 @@
+@use "@/styles/breakpoints.scss" as *;
+
+.marketingSectionMain {
+    .marketingCardsContainer {
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    .marketingCard {
+        border-right: 1px solid #DBDBDB;
+        padding-left: 30px;
+        display: flex;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    }
+}
+
+
+@media (max-width: $laptop) {
+    .marketingSectionMain  {
+        .marketingSectionHead {
+            .mainHead,
+            .mainDesc {
+                    text-align: center !important;
+            }
+        }
+        .marketingCard {
+            border: none !important;
+        }
+    }
+}

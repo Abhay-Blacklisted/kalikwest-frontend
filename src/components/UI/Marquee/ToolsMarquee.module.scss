@@ -1,0 +1,31 @@
+@use "@/styles/breakpoints.scss" as *;
+
+.MarqueeSection {
+             .marqueeSkeleton {
+       .marqueeSkeletonItem {
+         margin-inline: 20px;
+       }
+    }
+    .logo {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logo.loaded {
+  opacity: 1;
+}
+        .marqueeWrapper {
+        .marqueeTrack {
+    .imageItem {
+        width: 100px;
+        height: 100px;
+        margin-inline:20px;
+    }
+}
+}
+
+}
+
+:global(img) {
+  opacity: unset;
+}

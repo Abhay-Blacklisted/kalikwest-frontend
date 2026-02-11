@@ -1,0 +1,9 @@
+@use "@/styles/breakpoints.scss" as *;
+
+@media (max-width: $largeDesktop) {
+    .splittingDynamicSection {
+        .rowCustom {
+            align-items: center;
+        }
+    }
+}

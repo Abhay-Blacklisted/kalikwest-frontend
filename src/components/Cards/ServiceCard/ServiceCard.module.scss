@@ -1,0 +1,33 @@
+@use "@/styles/variables.scss" as *;
+
+
+.serviceCard {
+    border-radius: 14px;
+    border: 1px solid #BEBEBE;
+    padding: 39px 0px 0px 31px;
+
+    .serviceTitle {
+        margin-bottom: 19px;
+        margin-right: 12px;
+    }
+    .serviceDescription {
+        max-width: 350px;;
+    }
+    .serviceImage {
+      margin-top: 46px;
+      opacity: 0; 
+      transition: opacity 0.2s ease, transform 0.4s ease;
+      transform-origin: right top;
+      aspect-ratio: 4 / 4;
+      cursor: pointer;
+      border-radius: 13px 0 13px 13px;
+            &.loaded {
+        opacity: 1 !important;
+      }
+      &:hover {
+        transform: scale(1.12);
+      }
+
+    }
+
+}

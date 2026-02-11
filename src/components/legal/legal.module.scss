@@ -1,0 +1,24 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/fonts.scss" as *;
+
+.legalContent {
+    p, ul, li {
+            color: $dark-color;
+            font-family: 'Helvetica';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 133.33%;
+    }
+    h4 {
+            color: $dark-color;
+            font-family: 'Nohemi';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 133.33%;
+            text-transform: capitalize;
+    }
+    a {
+         color: $custom-primary-bg;
+         text-decoration: none;
+    }
+}

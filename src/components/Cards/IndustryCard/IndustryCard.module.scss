@@ -1,0 +1,50 @@
+@use "@/styles/breakpoints.scss" as *;
+
+
+.industryContainer {
+            margin-top:82px;
+            transition: opacity 0.6s ease-in-out;
+            &.loaded {
+            opacity: 1;
+            }
+
+            &.loading {
+            opacity: 0;
+            }
+    .leftImage {
+        img {
+            border-radius: 14px;
+        }
+    }
+    .topContainer {
+        .primaryDescription {
+            color: #77777D;
+        }
+    }
+    .imageContainer {
+    .clientImg {
+    border-radius: 9.52px;
+    border: 0.68px solid #DFDEE0;
+     padding: 10px;
+  height: 70px;
+  width: 122px;
+    }
+}
+}
+
+
+@media (min-width: $laptop) {
+.industryContainer {
+    margin-top:82px;
+    .leftImage {
+        img {
+            height: 400px;
+        }
+    }
+        .imageContainer {
+    .clientImg {
+     padding: 10px;
+    }
+}
+}
+}

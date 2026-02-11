@@ -1,0 +1,38 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.contactMain {
+    background: linear-gradient(165deg, #030024 30.67%, #232667 59.42%, #0A1053 102.66%);
+    padding-block: 190px 100px;
+    margin-top:-84px;
+    .contactSectionHeader {
+        max-width: 460px;
+        p, h2, h3 {
+        text-align: left !important;
+        color:$white-color;
+        }
+        h3 {
+            margin-inline: 0;
+        }
+    }
+
+    .contactIcons {
+        margin-top: 32px;
+        .iconList {
+            margin-bottom: 16px;
+            line-height: 28px;
+            img {
+                margin-right: 10px;
+                position: relative;
+                top:6px;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .contactMain {
+    padding-block: 150px 100px;
+}
+}

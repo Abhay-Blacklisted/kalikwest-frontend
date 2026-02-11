@@ -1,0 +1,29 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.howWeOperateSection {
+    .operateCards {
+            border-left: 1px solid #BEBEBE;
+            padding-left: 12px;
+    .operateHeading {
+        font-size: 24px;
+    }
+    .operateDescription {
+        color: #77777D;
+        max-width: 285px;
+    }
+    img {
+        max-width: 74px;
+        height: 80px;
+    }
+}
+}
+
+@media (max-width: $laptop) {
+    .howWeOperateSection {
+    .operateCards {
+          border: none;
+}
+    }
+}

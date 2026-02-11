@@ -1,0 +1,36 @@
+@use "@/styles/variables.scss" as *;
+
+
+.testimonialSectionSlider {
+    padding-bottom: 80px;
+.navigationsCustom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    .customBtn {
+        border-radius: 20px;
+        border: 1px solid $custom-primary-bg;
+        background: $custom-primary-bg;
+        width: 40px;
+        height: 40px;
+        line-height: 1;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background: transparent;
+          svg path {
+            fill: $custom-primary-bg;
+          }
+        }
+    }
+}
+:global {
+  .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+}
+}

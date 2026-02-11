@@ -1,0 +1,29 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.whyBrandsChooseSection {
+    min-height: 700px;
+    .listContainer {
+        margin-block: 30px 14px;
+    .listHeading {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $tertiary-font;
+    }
+    .listDescription {
+        color: #77777D;
+    }
+    .stars {
+        top:6px;
+    }
+}
+}
+
+
+@media screen and (max-width: $laptop) {
+   .whyBrandsChooseSection {
+       .brandImage {
+        width: 100%;
+       }
+} 
+}

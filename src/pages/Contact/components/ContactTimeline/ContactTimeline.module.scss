@@ -1,0 +1,56 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.contactTimelineSection {
+    background: linear-gradient(168deg, #030024 44.39%, #0A1053 102.8%);
+    .leftContent {
+            padding-block:clamp(60px, 5vw,100px);
+            .leftHeading {
+                 max-width: 900px;
+            }
+   .timelineList {
+    .point { 
+        border: 1px solid #CCC;
+        padding: 17px;
+        gap:16px;
+        .pointNumber {
+        color: $white-color;
+        font-family: $tertiary-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 122%;
+        }
+            .pointText {
+        color: $white-color;
+        font-family: $primary-font;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 122%;
+    }
+   }
+}
+    }
+}
+
+  /* Desktop container alignment */
+  @media (min-width: $laptop) {
+    .leftContent {
+      padding-left: calc((100vw - 960px) / 2);
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .leftContent {
+      padding-left: calc((100vw - 1140px) / 2);
+      padding-bottom: 0px;
+    }
+  }
+
+  @media (min-width: $largeDesktop) {
+    .leftContent {
+      padding-left: calc((100vw - 1320px) / 2);
+    }
+  }
+

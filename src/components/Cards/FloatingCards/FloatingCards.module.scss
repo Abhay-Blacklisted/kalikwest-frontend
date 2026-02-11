@@ -1,0 +1,140 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.floatingCard {
+    position: relative;
+    height: 483px;
+    margin-top:20px !important;
+    max-width: 450px;
+    margin: auto;
+    .item {
+color: #101010;
+font-family: $tertiary-font;
+font-size: 16px;
+line-height:1;
+font-weight: 500;
+text-transform: capitalize;
+border-radius: 50px;
+padding: 15px 30px;
+width: fit-content;
+    }
+}
+
+.pink {
+    background:#FE97CF;
+    border: 1px solid #FE97CF ;
+    transform: rotate(30.177deg);
+    top:260px;
+    right: 180px;
+}
+
+.yellow {
+    background:#FFD447;
+    transform: rotate(15.484deg);
+    top:0px;
+}
+
+.green {
+    background: #C2D838;
+    transform: rotate(-16.18deg);
+    top:120px;
+    right: 0;
+}
+
+.purple {
+    background: #CECEFF;
+    transform: rotate(12.845deg);
+    right: 0;
+    top:240px;
+}
+
+.blue {
+    background: #94C7FF;
+    transform: rotate(11.918deg);
+   top:360px;
+   left: -5px;
+   
+}
+
+.transparentOne {
+    border: 1px solid $black-color;
+    transform: rotate(-14.134deg);
+    top: 0;
+    right: 0;
+}
+
+.transparentTwo {
+    border: 1px solid $black-color;
+    transform: rotate(-12.015deg);
+    top:100px;
+}
+
+.transparentThree {
+    border: 1px solid $black-color;
+    transform: rotate(-15.119deg);
+    right: 0;
+    top:350px;
+}
+
+.starBlue {
+    right: 195px;
+    top: -10px;
+}
+
+.starYellowLg {
+    left: 0;
+    top:60px;
+}
+
+.starPink {
+    right: 0;
+    top:190px;
+}
+
+.starPurple {
+    left: 0;
+    top: 285px;
+}
+
+.starYellow {
+    right: 100px;
+    top: 305px;
+}
+
+.starGreen {
+    right: 200px;
+    top: 196px;
+}
+
+@media (max-width: $largeDesktop) {
+    .floatingCard {
+    height: 430px;
+}
+}
+
+
+@media (max-width: 450px) {
+    .floatingCard {
+    .item {
+font-size: 13px;
+padding: 15px 20px;
+width: fit-content;
+    };
+
+}
+
+.pink {
+    width: 185px !important;
+    right: 160px;
+}
+
+.starPurple {
+    top: 300px;
+}
+
+.starBlue {
+    right: 181px;
+    top: -30px;
+}
+}

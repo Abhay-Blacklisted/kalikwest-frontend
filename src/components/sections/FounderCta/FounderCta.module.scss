@@ -1,0 +1,40 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.founderSection {
+    border-radius: 14px;
+    background: linear-gradient(168deg, #030024 44.39%, #0A1053 102.8%);
+    max-width: 1052px;
+    margin:auto;
+.founderImage {
+    img {
+        border-radius: 14px;
+    }
+}
+.founderQuote {
+    p {
+        max-width: 562px;
+    }
+}
+.founderCta {
+    padding: 50px 75px;
+    border-radius: 14px;
+    .founderDetail {
+        h4 {
+    color: $white-color;
+    font-family: $tertiary-font;
+    font-size: 30px;
+    line-height: 120%;
+        }
+    }
+}
+}
+
+
+@media (max-width: $laptop) {
+    .founderSection {
+   .founderCta {
+    padding: 40px 20px;
+}
+    }
+}

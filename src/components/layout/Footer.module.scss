@@ -1,0 +1,28 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.footer {
+   margin: 50px 0px;
+    .navLink, 
+    .copyrightText  {
+color: $dark-color;
+font-family: $tertiary-font;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px; 
+    }
+    .navLink {
+        &:hover {
+            color: $custom-primary-bg;
+        }
+        &:active, &:focus {
+              color: $custom-primary-bg;
+        }
+    }
+        .copyrightText {
+font-size: 14px;
+white-space: nowrap;
+
+    }
+}

@@ -1,0 +1,80 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.creativeCardsSection {
+    background: linear-gradient(168deg, #030024 44.39%, #0A1053 102.8%), #121314;
+    padding-block: 90px;
+    overflow: hidden;
+}
+
+
+/*Cards*/
+
+.giphyCard,
+.snapchatCard {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: 14px;
+    justify-content: center;
+}
+
+
+.snapchatCard {
+    background-image: url("/snapchatBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .snapchatItems {
+    margin-top:50px;
+    justify-content: center;
+    .evenCard {
+        margin-top: 65px;
+    }
+}
+}
+
+.giphyItemsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    align-items: end;
+
+    :nth-child(2) {
+    position: relative;
+    top:70px;
+    }
+    :nth-child(4) {
+        position: relative;
+        top:40px;
+    }
+
+}
+
+@media (max-width: $largeDesktop) {
+ .snapchatCard {
+    .snapchatItems {
+     .primary-description {
+        font-size: 14px;
+     }
+}
+}
+}
+
+@media (max-width: $laptop) {
+    .giphyItemsContainer {
+    :nth-child(2) {
+    top:50px;
+    }
+    :nth-child(4) {
+        top:15px;
+    }
+}
+
+}
+
+@media (max-width: $mobile) {
+    .giphyCard,
+.snapchatCard {
+    padding: 30px 10px;
+}
+
+}

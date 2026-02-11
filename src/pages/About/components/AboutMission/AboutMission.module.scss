@@ -1,0 +1,19 @@
+@use "@/styles/breakpoints.scss" as *;
+
+.listContainer {
+
+    .subHeading {
+        border-radius: 14px;
+        border: 1px solid #3D27FF;
+        padding: 7px 14px 3px 14px;
+        width: fit-content;
+        margin-bottom: 22px;
+    }
+}
+
+@media (min-width: $laptop) {
+    .listContainer {
+    max-width: 600px;
+    margin-left: auto;
+    }
+}

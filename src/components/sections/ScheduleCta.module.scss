@@ -1,0 +1,16 @@
+.scheduleCtaParent {
+    max-width: 972px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0 0.362px 0.652px 0 rgba(255, 255, 255, 0.02) inset, 0 3px 5.4px -1px rgba(255, 255, 255, 0.04) inset;
+    .scheduledCtaChild {
+        max-width: 760px;
+        margin: auto;
+        padding-block: 50px;
+    .buttonContainer {
+        margin-block: 40px;
+    }
+}
+}

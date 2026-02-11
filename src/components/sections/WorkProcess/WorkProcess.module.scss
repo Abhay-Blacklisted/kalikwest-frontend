@@ -1,0 +1,63 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.workProcessSection {
+    .workProcessHeader {
+    margin-bottom: 120px;
+    }
+    .stepNumber {
+color: #FFF;
+font-family: $tertiary-font;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px; 
+border-radius: 30px;
+background: #3D27FF;
+padding: 6px 10px;
+right: -25px;
+    }
+   .title {
+    font-size: 32px;
+   }
+   .description {
+    max-width: 350px;
+   }
+   .icon {
+    height: 65px;
+    width: 65px;
+   }
+   .arrows {
+
+    img {
+        position: absolute;
+    &:nth-child(1) {
+     top: 5%;
+    right: 50%;
+    transform: translate(-50%, -5%);
+    }
+    &:nth-child(2) {
+     top: 5%;
+    right: 20%;
+    transform: translate(-20%, -5%);
+    }
+   }
+}
+} 
+
+@media (max-width: $laptop) {
+    .workProcessSection {
+        .workProcessHeader {
+    margin-bottom: 60px;
+    }
+}
+}
+@media (min-width: $desktop) and (max-width: $largeDesktop) {
+    .workProcessSection {
+    img {
+    &:nth-child(1) {
+    right: 47% !important;
+    }
+   }
+    }
+}

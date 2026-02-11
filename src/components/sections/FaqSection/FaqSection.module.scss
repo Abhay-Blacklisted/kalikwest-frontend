@@ -1,0 +1,96 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+.faqParent {
+    .faqLeftContainer {
+            border-radius: 14px;
+            background: linear-gradient(168deg, #030024 44.39%, #0A1053 102.8%);
+        padding:60px 20px;
+        h4 {
+            color: $white-color;
+            font-family: $primary-font;
+            font-size: clamp(30px, 2.5vw, 40px);
+            font-weight: 400;
+            line-height: 120%;
+        }
+        .emailText {
+           color: $white-color;
+            font-family: $tertiary-font;
+            font-size: 16px;
+            line-height: 175%;
+            a {
+                color: $custom-primary-bg;
+            }
+        }
+    }
+    :global {
+           .accordion-button,
+           .accordion-header,
+           .accordion-item {
+           background-color: transparent;
+        }
+
+        .accordion-item {
+            margin-bottom: 15px;
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+            border: 1px solid #CCC;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+        }
+        .accordion-item:not(:first-of-type) {
+            border-top: 1px solid #CCC !important;
+        }
+
+        .accordion-button {
+            color:$dark-color;
+            font-family:$primary-font;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 120%;
+            padding: 17px 21px;
+            gap:15px;
+        }
+          .accordion-button:not(.collapsed) {
+            background: transparent;
+            color: $custom-primary-bg;
+    }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-body {
+                color: $dark-color;
+                font-family: $tertiary-font;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 133.33%;
+        }
+        .accordion-button::after {
+            background-image: url("/icons/plusArrow.svg");
+            width:14px;
+            height: 14px;
+            transform: rotate(0deg);
+            background-size: 100% 100%;
+
+}
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("/icons/minusArrow.svg");
+            transform: rotate(0deg);
+        }
+}
+}
+
+@media (max-width: $mobile) {
+    .faqParent {
+    :global  {
+        .accordion-button {
+            font-size: 18px;
+        
+        }
+        .accordion-body {
+        font-size: 16px;
+
+        }
+    }
+}
+}

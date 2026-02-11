@@ -1,0 +1,26 @@
+@use "@/styles/breakpoints.scss" as *;
+
+
+.ResultCard {
+border-radius: 14px;
+padding: 68px 34px;
+&.odd {
+    background: #8DDBE0;
+}
+&.even {
+    margin-top: 87px;
+    background: #C2D838;
+}
+.cardHeading {
+    margin-bottom: 80px;
+    .cardHeadingText {
+        font-size: clamp(44px, 4vw, 64px);
+    }
+}
+}
+
+@media (max-width: $desktop) {
+    .ResultCard {
+        padding: 48px 20px;
+    }
+}

@@ -1,0 +1,27 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
+
+
+.IndustryContainer {
+    position: relative;
+    .customButtonContainer {
+        z-index: 99;
+    .buttonDesign {
+        background: transparent;
+        border-radius: 32.5px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 20px;
+    }
+}
+}
+
+@media (max-width: $laptop) {
+    
+.IndustryContainer {
+    .customButtonContainer {
+    .buttonDesign {
+        padding: 10px;
+    }
+}
+}
+}
