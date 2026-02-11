@@ -23,7 +23,7 @@ const WorkProcess = ({
                     className={styles.workProcessHeader}
                     />
 
-            <Row  className="position-relative mobileSlider gy-5 justify-content-center">
+            <Row  className="position-relative mobileSlider gy-5 justify-content-start justify-content-md-center">
                 {steps.map((item,index) => (
                 <Col xs={12} sm={6} lg={4} key={index} className="d-flex flex-column align-items-center gap-4 sliderCol">
                  {item.icon && (
