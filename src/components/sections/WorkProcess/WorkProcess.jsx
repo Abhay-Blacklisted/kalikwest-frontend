@@ -42,7 +42,7 @@ const WorkProcess = ({
 
 
            {(arrowOne || arrowTwo) && (
-          <div className={`${styles.arrows} d-none d-xl-block`} aria-hidden>
+          <div className={`${styles.arrows} d-none d-xl-block m-0`} aria-hidden>
             {arrowOne && <img src={arrowOne} alt="arrow" />}
             {arrowTwo && <img src={arrowTwo} alt="arrow" />}
           </div>
