@@ -1,5 +1,6 @@
 import getIndustries from "@/api/industries.api";
 import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData } from '@tanstack/react-query';
 
 const formattedData = (data = []) =>
   data.map((item) => ({
@@ -20,7 +21,7 @@ const useIndustries = () => {
   return useQuery ({
     queryKey: ["services", "industries"],
     queryFn:  fetchIndustries,
-    keepPreviousData: true,    
+    placeholderData: keepPreviousData,
   })
 };
 

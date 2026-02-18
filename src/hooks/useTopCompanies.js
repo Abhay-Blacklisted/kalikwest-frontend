@@ -1,5 +1,6 @@
 import { topCompanies } from "@/api/topcompanies.api";
 import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData } from '@tanstack/react-query';
 
 const normalizeCompanies = (data = []) =>
   data.map(item => ({
@@ -19,6 +20,6 @@ const normalizeCompanies = (data = []) =>
     return  useQuery({
       queryKey:["top-companies"],
       queryFn: fetchTopCompanies,
-      keepPreviousData: true,   
+      placeholderData: keepPreviousData,  
   })}
   

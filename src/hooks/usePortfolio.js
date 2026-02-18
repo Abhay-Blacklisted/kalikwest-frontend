@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { portfolioData } from "@/api/portfolio.api";
+import { keepPreviousData } from '@tanstack/react-query';
 
 const formatPortfolio = (data = []) =>
   data.map((item) => ({
@@ -23,7 +24,7 @@ const usePortfolio = ({ limit } = {}) => {
   return useQuery({
     queryKey: ["portfolio", limit], 
     queryFn:  fetchPortfolio,
-    keepPreviousData: true,    
+    placeholderData: keepPreviousData,    
 
   });
 };

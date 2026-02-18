@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { toolsData } from "@/api/tools.api";
+import { keepPreviousData } from '@tanstack/react-query';
 
 
 const normalizeTools = (apiData = []) => {
@@ -24,7 +25,7 @@ const useToolsMarquee = () => {
   return useQuery({
     queryKey: ["tools-marquee"],
     queryFn: fetchTools,
-    keepPreviousData: true,
+   placeholderData: keepPreviousData,
   });
 };
 

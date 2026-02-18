@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { getFaqBySlug } from "../api/faq.api";
+import { keepPreviousData } from '@tanstack/react-query';
 
 const fetchFaq = async ({queryKey, signal}) => {
 
@@ -19,7 +20,7 @@ const useFaq = (slug) => {
     queryFn: fetchFaq,   
     enabled: !!slug, 
     placeholderData: [],             
-    keepPreviousData: true,         
+    placeholderData: keepPreviousData,        
   });
 };
 

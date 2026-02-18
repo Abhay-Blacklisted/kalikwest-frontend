@@ -1,5 +1,6 @@
 import { ServicesData } from "@/api/services.api";
 import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData } from '@tanstack/react-query';
 
 const formattedData = (data = []) => 
   data.map((item) => ({
@@ -24,7 +25,7 @@ const useServices = ({ limit } = {}) => {
   return useQuery({
     queryKey: ["services", limit ?? "all"],
     queryFn:  fetchServices,
-    keepPreviousData: true,   
+    placeholderData: keepPreviousData,
     
   })
 }
