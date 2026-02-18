@@ -7,10 +7,10 @@ const Footer = () => {
     return (
       <Container className={styles.footer}>
         <Row className='align-items-center flex-column-reverse flex-lg-row'>
-            <Col xs={12} lg={4} xxl={6}>
+            <Col xs={12} lg={3} xxl={4}>
             <span  className={`${styles.copyrightText} text-center text-lg-start d-block`}> Copyright <NavLink to="/" className="text-decoration-none"> @Kalikwest </NavLink>  All Rights Reserved. </span>
             </Col>
-          <Col xs={12} lg={8}  xxl={6} >
+          <Col xs={12} lg={9}  xxl={8} >
           <Nav className='justify-content-center'>
             <Nav.Link as={NavLink} to="/services" className={`${styles.navLink}`}>Services</Nav.Link>
               <Nav.Link as={NavLink} to="/portfolio" className={`${styles.navLink}`}>Projects</Nav.Link>
