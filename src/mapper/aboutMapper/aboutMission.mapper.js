@@ -4,7 +4,7 @@ export const mapAboutMission = (apiData) => {
         subHeading: "What Drives Us",
         heading: apiData.title,
         description: apiData.description,
-        list: (apiData?.page_meta?.Sections).map((item) => ( {
+        list: (apiData.page_meta?.Sections || []).map((item) => ( {
             title: item.title_list,
             description: item.description_list,
         }))

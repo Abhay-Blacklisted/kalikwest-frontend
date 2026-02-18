@@ -33,7 +33,7 @@ const scheduleCtaData = {
     secondaryTitle: " Great Work.",
      image: kalikwestSignature
   },
-    "/terms-&-conditions": {
+    "/terms-conditions": {
     title: "Good Energy.",
     secondaryTitle: " Great Work.",
      image: kalikwestSignature

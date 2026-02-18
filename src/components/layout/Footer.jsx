@@ -16,8 +16,8 @@ const Footer = () => {
               <Nav.Link as={NavLink} to="/portfolio" className={`${styles.navLink}`}>Projects</Nav.Link>
                <Nav.Link as={NavLink} to="/about" className={`${styles.navLink}`}>About Us</Nav.Link>
              <Nav.Link as={NavLink} to="/contact-us"  className={`${styles.navLink}`}>Contact</Nav.Link>  
-            <Nav.Link as={NavLink} to="privacy-policy"  className={`${styles.navLink}`}>Privacy Policy</Nav.Link>
-            <Nav.Link as={NavLink} to="terms-conditions"  className={`${styles.navLink}`}>Terms & Conditions</Nav.Link>       
+            <Nav.Link as={NavLink} to="/privacy-policy"  className={`${styles.navLink}`}>Privacy Policy</Nav.Link>
+            <Nav.Link as={NavLink} to="/terms-conditions"  className={`${styles.navLink}`}>Terms & Conditions</Nav.Link>       
           </Nav>
          </Col>
           </Row>

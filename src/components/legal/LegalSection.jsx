@@ -5,7 +5,7 @@ const LegalSection = ({ content }) => {
     <section className="legalContentSection">
       <div
         className={styles.legalContent}
-        dangerouslySetInnerHTML={{ __html: content }}
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content) }}
       />
     </section>
   );
