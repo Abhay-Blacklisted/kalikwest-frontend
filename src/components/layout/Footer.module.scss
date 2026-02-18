@@ -11,6 +11,9 @@ font-family: $tertiary-font;
 font-size: 16px;
 font-weight: 400;
 line-height: 30px; 
+.copyrightLink {
+    color: $custom-primary-bg;
+}
     }
     .navLink {
         &:hover {

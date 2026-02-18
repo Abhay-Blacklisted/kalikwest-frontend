@@ -8,7 +8,7 @@ const Footer = () => {
       <Container className={styles.footer}>
         <Row className='align-items-center flex-column-reverse flex-lg-row'>
             <Col xs={12} lg={3} xxl={4}>
-            <span  className={`${styles.copyrightText} text-center text-lg-start d-block`}> Copyright <NavLink to="/" className="text-decoration-none"> @Kalikwest </NavLink>  All Rights Reserved. </span>
+            <span  className={`${styles.copyrightText} text-center text-lg-start d-block`}> Copyright <NavLink to="/" className={`${styles.copyrightLink} text-decoration-none`}> @Kalikwest </NavLink>  All Rights Reserved. </span>
             </Col>
           <Col xs={12} lg={9}  xxl={8} >
           <Nav className='justify-content-center'>

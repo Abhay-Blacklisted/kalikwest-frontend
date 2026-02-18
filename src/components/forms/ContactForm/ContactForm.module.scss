@@ -74,6 +74,10 @@
   padding-bottom:  40px;
   p {
     color: #868686;
+    .tcText {
+      color: $custom-primary-bg;
+      font-weight: 500;
+    }
   }
 }
 }

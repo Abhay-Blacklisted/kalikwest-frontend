@@ -8,7 +8,7 @@ const ServicesBrands = () => {
     return (
         <>
         <SplittingDynamicSection
-         heading="Designed for brands that expect more"
+         heading="Designed for brands that expect more" headingClassName="brandsHeadService"
          description="We build connected services that clean up your brand story, sharpen your digital presence, and create marketing you can actually rely on."
          align="left"
          children={

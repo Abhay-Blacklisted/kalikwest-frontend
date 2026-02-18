@@ -12,6 +12,7 @@ const SplittingDynamicSection = ({
     subHeading,
     subHeadingClassName,
     heading,
+    headingClassName,
     description,
     align
 }) => {
@@ -22,11 +23,11 @@ const SplittingDynamicSection = ({
 
                 <SectionHeader
                 subHeading={subHeading} subHeadingClassName={subHeadingClassName}
-                heading={heading}
+                heading={heading} headingClassName={headingClassName}
                 description={description}
                 align={align}
                 />
-                <Row className={`${styles.rowCustom} m-60 gy-5 ${reverse ? "flex-row-reverse && align-items-center" : ''}`}>
+                <Row className={`${styles.rowCustom} mt-sm-0 m-60 gy-5 ${reverse ? "flex-row-reverse && align-items-center" : ''}`}>
                     <Col xs={12}  lg={6} xl={7} xxl={8}>
                     {children}
                     </Col>
