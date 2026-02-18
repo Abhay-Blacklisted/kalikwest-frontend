@@ -118,23 +118,7 @@ const ContactForm = () => {
             )}
           </div>
 
-          {/* Company */}
-          <div className={styles.inputContainer}>
-            <input
-              type="text"
-              placeholder="Company Name"
-              name="company_name"
-              value={formData.company_name}
-              onChange={handleChange}
-            />
-            {errors.company_name && (
-              <p className={`${styles.errorText} primary-description mt-2`}>
-                {errors.company_name[0]}
-              </p>
-            )}
-          </div>
-
-          {/* Email */}
+                    {/* Email */}
           <div className={styles.inputContainer}>
             <input
               type="email"
@@ -149,6 +133,7 @@ const ContactForm = () => {
               </p>
             )}
           </div>
+
 
           {/* Phone */}
           <div className={styles.inputContainer}>
@@ -165,6 +150,23 @@ const ContactForm = () => {
               </p>
             )}
           </div>
+
+          {/* Company */}
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              placeholder="Company Name"
+              name="company_name"
+              value={formData.company_name}
+              onChange={handleChange}
+            />
+            {errors.company_name && (
+              <p className={`${styles.errorText} primary-description mt-2`}>
+                {errors.company_name[0]}
+              </p>
+            )}
+          </div>
+
 
           {/* City */}
           <div className={styles.inputContainer}>
@@ -203,7 +205,7 @@ const ContactForm = () => {
             <textarea
               name="message"
               rows="4"
-              placeholder="Tell us briefly what you’re looking to build, improve, or scale"
+              placeholder="Message (Tell us briefly what you’re looking to build, improve, or scale)"
               value={formData.message}
               onChange={handleChange}
             />
