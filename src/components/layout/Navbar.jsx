@@ -71,16 +71,17 @@ useEffect(() => {
         <Navbar.Collapse  className={`${styles.navbarCollapse}` }>
           <Nav className={`${styles.customNavbar} ms-auto`}>
 
-            <Nav.Link as={NavLink} to="/about" onClick={() => setExpanded(false)} className={`${styles.navLink} p-lg-0`}>
-            About Us
-            </Nav.Link>
 
             <Nav.Link as={NavLink} to="/services" onClick={() => setExpanded(false)} className={`${styles.navLink} p-lg-0`}>
             Services
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/portfolio" onClick={() => setExpanded(false)} className={`${styles.navLink} p-lg-0`}>
-            Portfolio
+            Projects
+            </Nav.Link>
+
+            <Nav.Link as={NavLink} to="/about" onClick={() => setExpanded(false)} className={`${styles.navLink} p-lg-0`}>
+            About Us
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/contact-us" onClick={() => setExpanded(false)}className={`${styles.navLink} p-lg-0`}>
