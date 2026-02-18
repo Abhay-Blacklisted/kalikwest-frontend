@@ -3,7 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 import Button from "@/components/UI/Button/Button";
 import styles from "./ContactForm.module.scss";
 import { submitContactForm } from "@/api/contact.api";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const Services = [
   "Branding",
