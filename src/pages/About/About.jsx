@@ -20,9 +20,9 @@ const About = () => {
   AboutResultSection,
   AboutTextMarquee,
   FounderCtaAbout,
-  AboutBrandsChoose,
-  AboutLocation,
   AboutOperate,
+  AboutLocation,
+  AboutBrandsChoose,
   AboutPortfolio,
   AboutTestimonials,
   AboutImageMarquee

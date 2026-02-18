@@ -7,7 +7,7 @@ const ContactLocation = () => {
         <LocationSection
         subHeading="Location"
         heading="Where We Operate"
-        description="Our base of operations is in the United States from where we work with brands across the globe including the US, India, Dubai, and the UK. We collaborate through structured calls and shared workspaces, keeping communication clear and delivery consistent from start to finish."
+        description="Our base of operations is in the United States, India, and Dubai, where we work with brands across the globe. We collaborate through structured calls and shared workspaces, keeping communication clear and delivery consistent from start to finish."
         />
         </>
     )

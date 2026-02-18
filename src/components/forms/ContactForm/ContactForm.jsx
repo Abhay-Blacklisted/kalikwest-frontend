@@ -7,7 +7,6 @@ import { NavLink } from "react-router";
 
 const Services = [
   "Branding",
-  "Web Design",
   "Development",
   "UI/UX",
   "SEO",
