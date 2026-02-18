@@ -2,6 +2,7 @@ import { topCompanies } from "@/api/topcompanies.api";
 import { useQuery } from "@tanstack/react-query";
 import { keepPreviousData } from '@tanstack/react-query';
 
+
 const normalizeCompanies = (data = []) =>
   data.map(item => ({
     id: item.id,
