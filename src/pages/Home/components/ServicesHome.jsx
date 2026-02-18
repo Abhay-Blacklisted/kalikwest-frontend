@@ -13,7 +13,7 @@ const ServicesHome = () => {
              <SectionHeader 
              subHeading = "Services"
              heading = "Services We Offer"
-             description = "Our approach blends creativity, marketing, and strategy to deliver growth at every step."             
+             description = "We bring together strategy, creativity, and execution to help brands and creators grow with clarity and consistency."             
              />
 
              <ServicesSection services={services} showButton={true} loading={isFetching} limit={3} error={error}/>
