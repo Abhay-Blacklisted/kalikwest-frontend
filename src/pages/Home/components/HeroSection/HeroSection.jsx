@@ -24,7 +24,7 @@ const HeroSection = ({headerData}) => {
 
           <div className={`${styles.dualButtons} d-flex gap-4 justify-content-center mt-4 flex-wrap`}>
             <Button to="/services" variant="primary"> Explore Services </Button>
-            <Button to="/contact-us" variant="outline"> Book A Call </Button>
+            <Button to="/contact-us" variant="outline"> Get A Quote </Button>
           </div>
                <div className={`${styles.leftVectorContainer} position-absolute`}>
        <img src={vectorLeft} alt="vector"  fetchpriority="high"/>

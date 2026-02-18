@@ -15,7 +15,7 @@ const PortfolioHome = () => {
         <SectionHeader 
         subHeading = "Projects"
         heading = "Featured Projects"
-        description = "Get a glimpse of our work"
+        description = "A glimpse into how we turn ideas into high-impact digital experiences."
         
         />
         <PortfolioSection portfolios={portfolio} showButton={true} limit={4} loading={loading} error={error}/>

@@ -45,9 +45,9 @@ const Home = () => {
         CreativeCardsSection,
         MarketingcardsHome,
         HomeLeadSection,
+        HomeTestimonials,
         FeaturesHome,
         FounderCtaHome,
-        HomeTestimonials,
         FaqHome
     ];
     return (
