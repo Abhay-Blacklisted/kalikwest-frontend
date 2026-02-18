@@ -241,7 +241,7 @@ const ContactForm = () => {
         <div className={styles.tcContainer}>
           <p className="primary-description mb-0">
             By submitting this form, you agree to our{" "}
-            <NavLink to="/terms-&-conditions">Terms & Conditions</NavLink>
+            <NavLink to="/terms-conditions">Terms & Conditions</NavLink>
           </p>
         </div>
 
