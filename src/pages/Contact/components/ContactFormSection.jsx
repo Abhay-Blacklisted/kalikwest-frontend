@@ -3,9 +3,7 @@ import styles from "./ContactFormSection.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import SectionHeader from "@/components/UI/SectionHeader/SectionHeader";
 import whiteInvertedLogo from "@/assets/icons/whiteInvertedLogo.svg";
-import phone from "@/assets/icons/phone.svg";
 import email from "@/assets/icons/email.svg";
-import location from "@/assets/icons/location.svg";
 import { mapContactDetail } from "@/mapper/contactMapper/contactDetail.mapper";
 import useWebsiteContent from "@/hooks/useWebsiteContent";
 import { useMemo } from "react";
@@ -17,11 +15,8 @@ const ContactFormSection = () => {
    const {data, isError} = useWebsiteContent({page: "Contact", sectionId: 1});
 
 
-    const mappedData = useMemo(() => {
-    return {
-    ...CONTACT_FALLBACK,
-    ...(mapContactDetail(data?.[0]) || {}),
-    };
+const mappedData = useMemo(() => {
+  return mapContactDetail(data?.[0]) || CONTACT_FALLBACK;
 }, [data]);
 
      if (!mappedData) return null;
@@ -39,18 +34,6 @@ const ContactFormSection = () => {
 
             
             <div className={styles.contactIcons}>
-              {mappedData.phone && (
-                <span className={`d-flex align-items-start ${styles.iconList} primary-description`}>
-                  <img src={phone} alt="phone" />
-                  <a
-                    href={`tel:${mappedData.phone.replace(/\s+/g, "")}`}
-                    className="text-decoration-none text-white"
-                  >
-                    {mappedData.phone}
-                  </a>
-                </span>
-              )}
-
               {mappedData.email && (
                 <span className={`d-flex align-items-start ${styles.iconList} primary-description`}>
                   <img src={email} alt="email" />
@@ -60,13 +43,6 @@ const ContactFormSection = () => {
                   >
                     {mappedData.email}
                   </a>
-                </span>
-              )}
-
-              {mappedData.address && (
-                <span className={`d-flex align-items-start ${styles.iconList} primary-description text-white`}>
-                  <img src={location} alt="location" />
-                  {mappedData.address}
                 </span>
               )}
             </div>

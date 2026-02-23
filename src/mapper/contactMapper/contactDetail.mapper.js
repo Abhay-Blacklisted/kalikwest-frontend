@@ -6,8 +6,6 @@ export const mapContactDetail = (apiData) => {
   return {
     heading: apiData.title,
     description: apiData.description,
-    phone: sections[0]?.title_list || "",
-    email: sections[0]?.description_list || "",
-    address: sections[1]?.title_list || "",
+    email: sections[0]?.title_list || "",
   };
 };
