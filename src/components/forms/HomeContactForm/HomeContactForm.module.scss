@@ -5,7 +5,7 @@
         border-radius: 14px;
         border: 1px solid #BEBEBE;
         background-color: transparent;
-        padding: 20px;
+        padding: clamp(12px, 1.2vw, 20px);
         color: #868686;
         font-family: $tertiary-font;
         font-size: 18px;

@@ -7,7 +7,7 @@
             border-left: 1px solid #BEBEBE;
             padding-left: 12px;
     .operateHeading {
-        font-size: 24px;
+        font-size: clamp(20px, 1.2vw, 24px);
     }
     .operateDescription {
         color: #77777D;

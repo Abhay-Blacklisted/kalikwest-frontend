@@ -10,7 +10,7 @@ html {
 .heroHeadingCustom {
 color: $dark-color;
 font-family: 'Nohemi';
-font-size: clamp(50px, 3vw, 72px);
+font-size: clamp(50px, 4vw, 72px);
 font-weight: 500;
 line-height: 140%;
 text-transform: capitalize;
@@ -28,7 +28,7 @@ text-transform: capitalize;
 .sub-heading {
 color: $dark-color;
 font-family: 'Nohemi';
-font-size: 24px;
+font-size: clamp(20px, 2.2vw, 24px);
 font-weight: 400;
 line-height: 133.33%;
 text-transform: capitalize;
@@ -36,7 +36,7 @@ text-transform: capitalize;
 .primary-description {
 color: $dark-color;
 font-family: 'Helvetica';
-font-size: 18px;
+font-size: clamp(14px, 1.2vw, 18px);
 font-weight: 400;
 line-height: 133.33%;
 }
@@ -88,22 +88,14 @@ body {
 /*Section Spacings*/
 
 .section-spacing {
-    margin-block:$section-spacing-desktop;
+margin-block: clamp(50px, 8vw, 150px);
 }
 
 
 /*Medias*/
 
-@media screen and (max-width: $laptop) {
-.section-spacing {
-    margin-block:$section-spacing-laptop;
-}
-}
 
 @media screen and (max-width: $mobile) {
-.section-spacing {
-    margin-block:$section-spacing-mobile;
-}
 
 /* Mobile slider */
   .mobileSlider {
