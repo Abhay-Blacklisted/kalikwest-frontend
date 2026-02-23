@@ -12,7 +12,7 @@ const HowWeOperate = ({
         <Container>
             <Row className="mobileSlider gy-4">
                 {operateCards.map((item,index) => (
-                <Col xs={12} sm={6} lg={3} key={index} className="sliderCol">
+                <Col xs={12} sm={6} lg={3} key={index} className="sliderCol d-flex">
                        <div className={`${styles.operateCards} d-flex flex-column gap-4`}>
                     {item.number && (
                         <Description text = {item.number} align="left" className={`${styles.operateDescription} mb-0`}/> 
