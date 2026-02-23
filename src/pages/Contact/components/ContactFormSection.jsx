@@ -10,6 +10,7 @@ import { mapContactDetail } from "@/mapper/contactMapper/contactDetail.mapper";
 import useWebsiteContent from "@/hooks/useWebsiteContent";
 import { useMemo } from "react";
 import { CONTACT_FALLBACK } from "@/data/contactFallback.data";
+import { stripHtml } from "@/utils/stripHtml";
 
 const ContactFormSection = () => {
 
@@ -33,7 +34,7 @@ const ContactFormSection = () => {
             <SectionHeader className={`${styles.contactSectionHeader}`}
             heading={mappedData.heading}
             subHeading="Contact Us" subHeadingIcon={whiteInvertedLogo}
-            description={mappedData.description}                     
+            description={stripHtml(mappedData.description)}                
             />
 
             
