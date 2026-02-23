@@ -33,19 +33,43 @@ text-transform: capitalize;
     .heroSection {
     .heroSectionContent {
         .heroHeading {
-         font-size: clamp(34px, 5vw, 50px);
+         font-size: clamp(34px, 4vw, 50px);
 
 }
+      .rightVectorContainer {
+     right: -20%;
+        }
     .leftVectorContainer, 
     .rightVectorContainer {
-     display: none;
+        img {
+     width: 190px;
 }
-
+    }
     }
 
 }
 }
 
+
+@media (max-width: $desktop) {
+    .heroSection {
+    .heroSectionContent {
+        .leftVectorContainer {
+            left: -23%;
+        }
+        .rightVectorContainer {
+     right: -20%;
+        }
+    .leftVectorContainer, 
+    .rightVectorContainer {
+        img {
+     width: 140px;
+}
+    }
+    }
+
+}
+}
 
 @media (max-width: $tablet) {
     .heroSection {

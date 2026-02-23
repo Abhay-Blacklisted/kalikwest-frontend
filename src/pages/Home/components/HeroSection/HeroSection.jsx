@@ -26,11 +26,11 @@ const HeroSection = ({headerData}) => {
             <Button to="/services" variant="primary"> Explore Services </Button>
             <Button to="/contact-us" variant="outline"> Get A Quote </Button>
           </div>
-               <div className={`${styles.leftVectorContainer} position-absolute`}>
+               <div className={`${styles.leftVectorContainer} position-absolute d-none d-lg-block`}>
        <img src={vectorLeft} alt="vector"  fetchpriority="high"/>
           </div>
             
-         <div className={`${styles.rightVectorContainer} position-absolute`}>
+         <div className={`${styles.rightVectorContainer} position-absolute d-none d-lg-block`}>
        <img src={vectorRight} alt="vector"  fetchpriority="high"/>
           </div>
           </div>
