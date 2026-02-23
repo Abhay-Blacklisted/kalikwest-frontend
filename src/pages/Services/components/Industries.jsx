@@ -10,7 +10,7 @@ const Industries = () => {
        <IndustrySection
        subHeading="How We Operate"
        heading="Industries We Serve"
-       description="With 10+ years of experience, we cater to the needs of a wide range of industries."
+       description="With 30+ years of experience, we cater to the needs of a wide range of industries."
        subTitle="Clients"
        industries={industries}
        loading={loading}
