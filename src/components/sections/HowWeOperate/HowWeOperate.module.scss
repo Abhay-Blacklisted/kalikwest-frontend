@@ -8,6 +8,7 @@
             padding-left: 12px;
     .operateHeading {
         font-size: clamp(20px, 1.2vw, 24px);
+        flex-grow: 1;
     }
     .operateDescription {
         color: #77777D;
