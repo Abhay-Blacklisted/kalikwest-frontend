@@ -89,7 +89,7 @@ useEffect(() => {
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/contact-us" onClick={() => setExpanded(false)}  className={`${styles.navLink} p-lg-0`}>
-            Book A Call 
+             Get in Touch
             <span className={`${styles.svgArrow} ps-2 `}> 
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
               <path d="M16.3007 5.18851H0.666668C0.297917 5.18851 0 5.48643 0 5.85518C0 6.22393 0.297917 6.52185 0.666668 6.52185H14.6903L10.6444 10.5677C10.384 10.8281 10.384 11.251 10.6444 11.5114C10.9048 11.7719 11.3278 11.7719 11.5882 11.5114L16.7736 6.32601C16.9653 6.13435 17.0215 5.84893 16.9174 5.59893C16.8132 5.35101 16.5694 5.18851 16.3007 5.18851Z" fill="#EDEDED"/>
