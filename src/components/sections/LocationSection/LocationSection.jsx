@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import SectionHeader from "@/components/UI/SectionHeader/SectionHeader";
-import map from "@/assets/images/map/map.webp"
+import map from "@/assets/images/map/location.webp"
 import styles from "./LocationSection.module.scss"
 
 
