@@ -5,7 +5,6 @@ import FounderCtaAbout from "./components/AboutFounder";
 import AboutTextMarquee from "./components/AboutMarquee";
 import AboutHero from "./components/AboutHero/AboutHero";
 import AboutImageMarquee from "./components/AboutImageMarquee";
-import AboutTestimonials from "./components/AboutTestimonials";
 import AboutResultSection from "./components/AboutResults";
 import AboutOperate from "./components/AboutOperate/Aboutoperate";
 import AboutBrandsChoose from "./components/AboutBrandsChoose/AboutBrandsChoose";
@@ -24,7 +23,6 @@ const About = () => {
   AboutLocation,
   AboutBrandsChoose,
   AboutPortfolio,
-  AboutTestimonials,
   AboutImageMarquee
 ];
     return (
