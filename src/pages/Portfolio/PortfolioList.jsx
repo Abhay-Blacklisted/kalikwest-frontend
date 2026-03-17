@@ -1,5 +1,4 @@
 import PortfolioMain from "./components/PortfolioMain";
-import PortfolioTestimonials from "./components/PortfolioTestimonials";
 const Portfolio = () => {
     return (
         <>
@@ -7,9 +6,6 @@ const Portfolio = () => {
         <PortfolioMain/>
         </section>
 
-        <section className="section-spacing">
-        <PortfolioTestimonials/>
-        </section>
 
         </>
     )

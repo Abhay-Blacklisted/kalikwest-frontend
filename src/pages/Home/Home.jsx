@@ -9,7 +9,6 @@ import HomeLeadSection from "./components/HomeLeadSection";
 import FeaturesHome from "./components/FeaturesHome";
 import FounderCtaHome from "./components/FounderCtaHome";
 import FaqHome from "./components/FaqHome";
-import HomeTestimonials from "./components/HomeTestimonials";
 import { useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { fetchSection } from "@/hooks/useWebsiteContent";
@@ -45,7 +44,6 @@ const Home = () => {
         CreativeCardsSection,
         MarketingcardsHome,
         HomeLeadSection,
-        HomeTestimonials,
         FeaturesHome,
         FounderCtaHome,
         FaqHome
