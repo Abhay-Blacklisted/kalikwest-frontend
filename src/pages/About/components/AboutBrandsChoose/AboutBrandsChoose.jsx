@@ -18,7 +18,7 @@ const AboutBrandsChoose = () => {
         description={mappedData.description}
         image = {BrandImage}
         list={mappedData.list}
-        buttonText="Book A Call"
+        buttonText="Get A Quote"
         buttonLink="/contact-us"
         />
         </>
