@@ -15,37 +15,33 @@ const PortfolioSection = ({
 }) => {
   return (
     <Container className={`${styles.portfolioSectionContainer} m-60`}>
-      <Row className="gy-4">
-        {error ? (
-                <div className="text-center text-red primary-description">
-                  Oops! Portfolios couldn’t load.
-                </div>
-              ) : (
-        Array.from({ length: limit }).map((_, index) => {
-          const portfolio = portfolios[index];
-          return (
-            <Col xs={12} lg={6} key={index}>
-              {loading ? (
-                <Skeleton
-                  height={360}
-                  borderRadius={14}
-                  baseColor="#e9e8ee"
-                  highlightColor="#f4f3f8"
-                  style={{ width: "100%", opacity: 0.7 }}
-                />
-              ) : portfolio ? (
-                <PortfolioCard
-                  image={portfolio.image}
-                  text={portfolio.text}
-                  description={portfolio.description}
-                />
-              ) : null}
-            </Col>
-          );
-               })
+     <Row className="gy-4">
+  {error ? (
+    <div className="text-center text-red primary-description">
+      Oops! Portfolios couldn’t load.
+    </div>
+  ) : (
+    (portfolios || []).slice(0, limit).map((portfolio, index) => (
+      <Col xs={12} lg={6} key={index}>
+        {loading ? (
+          <Skeleton
+            height={360}
+            borderRadius={14}
+            baseColor="#e9e8ee"
+            highlightColor="#f4f3f8"
+            style={{ width: "100%", opacity: 0.7 }}
+          />
+        ) : (
+          <PortfolioCard
+            image={portfolio.image}
+            text={portfolio.text}
+            description={portfolio.description}
+          />
         )}
-            
-      </Row>
+      </Col>
+    ))
+  )}
+</Row>
 
       {showButton && (
         <div

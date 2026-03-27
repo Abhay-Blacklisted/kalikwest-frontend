@@ -21,7 +21,7 @@ const PortfolioMain = () => {
         description="Showcasing our selected work across brands, platforms, and campaigns"
         />
 
-        <PortfolioSection portfolios={portfolio} showButton={false} loading={loading} error={error}/>
+        <PortfolioSection portfolios={portfolio} showButton={false} loading={loading} error={error} limit={portfolio.length}/>
         {/* <div className={styles.starVectors}>
         <img src={starVector} className={`${styles.starVector} img-fluid position-absolute top-0 d-none d-lg-block`}/>
         <img src={starVectorLg} className={`${styles.starVectorLg} img-fluid position-absolute bottom-0 d-none d-lg-block`}/>
